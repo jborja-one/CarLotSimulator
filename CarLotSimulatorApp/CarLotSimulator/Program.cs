@@ -53,6 +53,9 @@ CarLot carlot = new CarLot();
 carlot.AddCar(car1);
 carlot.AddCar(car2);
 carlot.AddCar(car3);
+carlot.NumberOfCars();
+
+//! I wasn't able to work this out with a static method, but I was able to find a work around. I was getting way too many errors that I was unfamiliar with. I would appreciate any hints on how to do this with a static method.
 
 foreach (var car in carlot.Cars)
 {
