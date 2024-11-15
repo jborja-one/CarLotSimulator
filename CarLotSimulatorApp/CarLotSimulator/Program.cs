@@ -28,34 +28,13 @@ Car car2 = new Car(2018, "Honda", "Accord", 3, 4, true);
 Car car3 = new Car(2021, "BMW", "X5", 5, 6, true);
 /*this would be the second way to instantiate a Car class, but I believe the error it gives me
 is because I have created a constructor in the Car class, is that why it doesn't work? */
-// Car car2 = new Car(){
-//     Year = 2019,
-//     Make = "Ford",
-//     Model = "Mustang",
-//     EngineNoise = 6,
-//     HonkNoise = 7,
-//     IsDrivable = false
-// };
-
-/*This would be the third way to instantiate a new Car class, but I believe it is the same issue with the
-above method as well.*/
-// Car car4 = new Car();
-// car4.Year = 2022;
-// car4.Make = "Nissan";
-// car4.Model = "Leaf";
-// car4.EngineNoise = 4;
-// car4.HonkNoise = 5;
-// car4.IsDrivable = true;
-
 
 CarLot carlot = new CarLot();
 
 carlot.AddCar(car1);
 carlot.AddCar(car2);
 carlot.AddCar(car3);
-carlot.NumberOfCars();
-
-//! I wasn't able to work this out with a static method, but I was able to find a work around. I was getting way too many errors that I was unfamiliar with. I would appreciate any hints on how to do this with a static method.
+CarLot.NumberOfCars();
 
 foreach (var car in carlot.Cars)
 {

@@ -6,7 +6,8 @@ namespace CarLotSimulator;
 public class CarLot
 {
     public List<Car> Cars { get; set; }
-
+    public static int CarCount = 0;
+     
     public CarLot()
     {
         Cars = new List<Car>();
@@ -15,14 +16,11 @@ public class CarLot
     public void AddCar(Car car)
     {
         Cars.Add(car);
+        CarCount++;
     }
 
-    public void NumberOfCars()
+    public static void NumberOfCars()
     {
-        // var carCount = 0;
-        // carCount++;
-        // Console.WriteLine($"There are {carCount} cars in the car lot.");
-        Console.WriteLine($"There are {this.Cars.Count} cars in the car lot.");
-
+        Console.WriteLine($"There are {CarCount} cars in the car lot");
     }
 }
